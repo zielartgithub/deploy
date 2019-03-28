@@ -1,0 +1,16 @@
+{
+  "family": "java",
+  "containerDefinitions": [
+    {
+      "name": "devops",
+      "image": "zielartdocker/repo:0.0.8",
+      "memory": 128,
+      "portMappings": [
+        {
+          "containerPort": 8082,
+          "protocol": "tcp"
+        }
+      ]    
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "family": "java",
+  "containerDefinitions": [
+    {
+      "name": "@NAME@",
+      "image": "@IMAGE@:@TAG@",
+      "memory": 128,
+      "portMappings": [
+        {
+          "containerPort": @PORT@,
+          "protocol": "tcp"
+        }
+      ]    
+    }
+  ]
+}

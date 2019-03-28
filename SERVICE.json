@@ -1,0 +1,96 @@
+{
+    "service": {
+        "status": "ACTIVE", 
+        "serviceRegistries": [], 
+        "pendingCount": 0, 
+        "launchType": "EC2", 
+        "enableECSManagedTags": false, 
+        "schedulingStrategy": "REPLICA", 
+        "loadBalancers": [], 
+        "placementConstraints": [], 
+        "createdAt": 1553729644.571, 
+        "desiredCount": 1, 
+        "serviceName": "devopsstaging", 
+        "clusterArn": "arn:aws:ecs:eu-central-1:087313645212:cluster/jenkins", 
+        "taskDefinition": "arn:aws:ecs:eu-central-1:087313645212:task-definition/java:5", 
+        "serviceArn": "arn:aws:ecs:eu-central-1:087313645212:service/devopsstaging", 
+        "propagateTags": "NONE", 
+        "deploymentConfiguration": {
+            "maximumPercent": 100, 
+            "minimumHealthyPercent": 0
+        }, 
+        "deployments": [
+            {
+                "status": "PRIMARY", 
+                "pendingCount": 0, 
+                "launchType": "EC2", 
+                "createdAt": 1553767047.552, 
+                "desiredCount": 1, 
+                "taskDefinition": "arn:aws:ecs:eu-central-1:087313645212:task-definition/java:5", 
+                "updatedAt": 1553767047.552, 
+                "id": "ecs-svc/9223370483087728255", 
+                "runningCount": 0
+            }, 
+            {
+                "status": "ACTIVE", 
+                "pendingCount": 0, 
+                "launchType": "EC2", 
+                "createdAt": 1553731130.815, 
+                "desiredCount": 1, 
+                "taskDefinition": "arn:aws:ecs:eu-central-1:087313645212:task-definition/java:4", 
+                "updatedAt": 1553731155.43, 
+                "id": "ecs-svc/9223370483123644992", 
+                "runningCount": 1
+            }
+        ], 
+        "events": [
+            {
+                "message": "(service devopsstaging) has reached a steady state.", 
+                "id": "431bb9b8-56bd-4de6-84c5-6a2ef007fe9e", 
+                "createdAt": 1553752758.693
+            }, 
+            {
+                "message": "(service devopsstaging) has reached a steady state.", 
+                "id": "6612aead-84b6-4913-8ad8-3b823450cfd3", 
+                "createdAt": 1553731155.437
+            }, 
+            {
+                "message": "(service devopsstaging) has started 1 tasks: (task f2c343fb-890f-4cb3-8113-de47f2367fff).", 
+                "id": "af5e4673-bc0b-4d90-8180-361183606c3f", 
+                "createdAt": 1553731146.563
+            }, 
+            {
+                "message": "(service devopsstaging) has stopped 1 running tasks: (task d288829b-2353-4813-a88a-36f7412fcc95).", 
+                "id": "721abdfc-ca99-4f08-8175-1af459a6b167", 
+                "createdAt": 1553731136.817
+            }, 
+            {
+                "message": "(service devopsstaging) has reached a steady state.", 
+                "id": "80f2b275-326d-41ab-b552-60e125b942c8", 
+                "createdAt": 1553730786.373
+            }, 
+            {
+                "message": "(service devopsstaging) has started 1 tasks: (task d288829b-2353-4813-a88a-36f7412fcc95).", 
+                "id": "889cbe74-4e1f-48eb-b0fd-bcb329b43689", 
+                "createdAt": 1553730776.602
+            }, 
+            {
+                "message": "(service devopsstaging) has stopped 1 running tasks: (task 34c2eb41-982f-4df2-a948-f4d9c67efc34).", 
+                "id": "15313db4-abec-43b0-b3c3-95baf0507c51", 
+                "createdAt": 1553730764.792
+            }, 
+            {
+                "message": "(service devopsstaging) has reached a steady state.", 
+                "id": "42107ec1-7b6a-42f1-8d99-9b5fae15d393", 
+                "createdAt": 1553729661.996
+            }, 
+            {
+                "message": "(service devopsstaging) has started 1 tasks: (task 34c2eb41-982f-4df2-a948-f4d9c67efc34).", 
+                "id": "abdb4db9-330e-4f49-b2a3-b04ac275243e", 
+                "createdAt": 1553729651.376
+            }
+        ], 
+        "runningCount": 1, 
+        "placementStrategy": []
+    }
+}
