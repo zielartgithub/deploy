@@ -11,6 +11,7 @@ stage('deploy') {
     sh 'aws configure set default.region eu-central-1'
     sh './deploy.sh devopsprod.properties $IMAGE_TAG'
     //wait until available
+    sh 'sleep 30'
     sh 'timeout 90 ./status_prod.sh || false'
     }
 }
