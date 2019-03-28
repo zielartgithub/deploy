@@ -1,0 +1,15 @@
+properties([parameters([string(defaultValue: '0.0.8', description: '', name: 'IMAGE_TAG', trim: false)])])
+node (label: 'slave'){
+stage('Checkout')    {
+    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CleanBeforeCheckout']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '6fd3e9f5-d163-4211-a18a-372f12f8fb81', url: 'https://github.com/zielartgithub/deploy.git']]])
+}
+stage('deploy') {
+    sh 'chmod a+x deploy.sh'
+    withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: '145cff34-9624-44af-9d50-52527e34889b', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+    // some block
+    sh 'aws configure set default.region eu-central-1'
+    sh './deploy.sh devopsstaging.properties $IMAGE_TAG'
+    }
+}
+
+}
