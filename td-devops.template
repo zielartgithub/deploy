@@ -1,5 +1,14 @@
 {
   "family": "@NAME@",
+        "volumes": [
+            {
+                "host": {
+                    "sourcePath": "/ecs/@NAME@"
+                },
+                "name": "@NAME"
+            }
+        ],
+
   "containerDefinitions": [
     {
       "name": "@NAME@",
