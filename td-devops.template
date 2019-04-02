@@ -5,7 +5,7 @@
       "name": "@NAME@",
       "image": "@IMAGE@:@TAG@",
       "memory": 128,
-      "MountPoints": [
+      "mountPoints": [
       {
         "ContainerPath" : "/opt/logs",
         "SourceVolume" : "joinus@NAME@",
