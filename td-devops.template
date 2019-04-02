@@ -7,9 +7,9 @@
       "memory": 128,
       "mountPoints": [
       {
-        "ContainerPath" : "/opt/logs",
-        "SourceVolume" : "joinus@NAME@",
-        "ReadOnly" : false
+        "containerPath" : "/opt/logs",
+        "sourceVolume" : "joinus@NAME@",
+        "readOnly" : false
       }
       ],
       "portMappings": [
