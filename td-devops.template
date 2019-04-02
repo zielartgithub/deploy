@@ -5,7 +5,7 @@
                 "host": {
                     "sourcePath": "/ecs/@NAME@"
                 },
-                "name": "@NAME"
+                "name": "@NAME@"
             }
         ],
 
