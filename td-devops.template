@@ -5,6 +5,11 @@
       "name": "@NAME@",
       "image": "@IMAGE@:@TAG@",
       "memory": 128,
+      {
+        "ContainerPath" : "/opt/logs",
+        "SourceVolume" : "joinus@NAME@",
+        "ReadOnly" : false
+      },
       "portMappings": [
         {
           "containerPort": 8081,
